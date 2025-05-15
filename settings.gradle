@@ -1,0 +1,2 @@
+rootProject.name = 'Chess_app'
+include 'user_service', 'clan_service', 'matchmaking_service', 'game_service', 'rank_service', 'bot_service', 'api_gateway', 'eureka_server'
