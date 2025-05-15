@@ -1,0 +1,125 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: url('img/bg-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav button {
+    margin-left: 15px;
+    padding: 10px 20px;
+    background-color: #5e9cd3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #4178a3;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 100px;
+}
+
+/* Overlay panel */
+.overlay-panel {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.overlay-panel h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay-panel p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Navigation boxes */
+.nav-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #5e9cd3;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.box:hover {
+    background-color: #4178a3;
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

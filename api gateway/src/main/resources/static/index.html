@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chess App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>Welcome to Chess App!</h1>
-<ul>
-    <li><a href="/users">Users</a></li>
-    <li><a href="/clans">Clans</a></li>
-    <li><a href="/matchmaking">Matchmaking</a></li>
-    <li><a href="/matches">Games</a></li>
-    <li><a href="/ranks/1">Rank</a></li>
-    <li><a href="/bot/move?boardState=...">Bot Move</a></li>
-</ul>
+<!-- Header -->
+<header>
+    <a href="index.html" class="logo">ChessGame</a>
+    <nav>
+        <button onclick="location.href='login.html'">Log In</button>
+        <button onclick="location.href='signup.html'">Sign Up</button>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<main>
+    <div class="overlay-panel">
+        <h1>Chess Game</h1>
+        <p>This game of chess is made for entertaining only. Have fun :)</p>
+        <div class="nav-boxes">
+            <a href="profile.html" class="box">Profile</a>
+            <a href="clans.html" class="box">Clans</a>
+            <a href="games.html" class="box">Games</a>
+            <a href="ranks.html" class="box">Ranks</a>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    This project made by Batyr IT2-2212
+</footer>
 </body>
 </html>
