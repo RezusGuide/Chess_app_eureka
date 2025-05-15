@@ -13,6 +13,4 @@ public class Match {
     private Long categoryId;
     private String result;
     private LocalDateTime matchDate;
-
-    // Getters and Setters
 }
